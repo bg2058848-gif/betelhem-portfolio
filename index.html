@@ -1,1 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Betelhem Getachew | Portfolio & Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #111;
+            padding: 15px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #111, #333);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #d4af37;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d4af37;
+            color: #111;
+            padding: 13px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 45px;
+        }
+
+        .section-title span {
+            color: #d4af37;
+        }
+
+        /* About */
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            width: 200px;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .skill h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Business */
+        .business {
+            background: #111;
+            color: white;
+        }
+
+        .business-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: auto auto 40px;
+            color: #ddd;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            color: #222;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-8px);
+        }
+
+        .product .icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #666;
+        }
+
+        /* Contact */
+        .contact-box {
+            max-width: 650px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-item {
+            background: white;
+            margin: 15px 0;
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .contact-item a {
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer span {
+            color: #d4af37;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">BETELHEM</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#business">Store</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Hi, I'm <span>Betelhem</span> 👋</h1>
+
+            <h2>Web Design & Development Student</h2>
+
+            <p>
+                Welcome to my personal website.
+                I love learning technology, creating websites,
+                and building my own business.
+            </p>
+
+            <a href="#about" class="btn">About Me</a>
+
+            <a href="#business" class="btn">Visit My Store</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <div class="about">
+
+            <p>
+                Hello! My name is <strong>Betelhem Getachew</strong>.
+                I am a Web Design & Development student who is
+                passionate about technology, creativity and business.
+            </p>
+
+            <br>
+
+            <p>
+                I am currently learning how to build modern websites
+                using HTML, CSS and JavaScript. My goal is to improve
+                my skills and create useful digital experiences.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>🌐 HTML</h3>
+                <p>Building website structure.</p>
+            </div>
+
+            <div class="skill">
+                <h3>🎨 CSS</h3>
+                <p>Creating beautiful designs.</p>
+            </div>
+
+            <div class="skill">
+                <h3>⚡ JavaScript</h3>
+                <p>Making websites interactive.</p>
+            </div>
+
+            <div class="skill">
+                <h3>💡 Web Design</h3>
+                <p>Creating modern user experiences.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Business -->
+    <section class="business" id="business">
+
+        <h2 class="section-title">
+            My <span>Store</span> 🛍️
+        </h2>
+
+        <p class="business-intro">
+            I also sell stylish and attractive fashion products.
+            Discover my collection of bags, shoes and clothing.
+        </p>
+
+        <div class="products">
+
+            <div class="product">
+                <div class="icon">👜</div>
+                <h3>Bags</h3>
+                <p>Beautiful and stylish bags for every occasion.</p>
+            </div>
+
+            <div class="product">
+                <div class="icon">👟</div>
+                <h3>Shoes</h3>
+                <p>Trendy shoes with different styles to choose from.</p>
+            </div>
+
+            <div class="product">
+                <div class="icon">👗</div>
+                <h3>Clothing</h3>
+                <p>Fashionable clothing for a modern look.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">Contact <span>Me</span> 📞</h2>
+
+        <div class="contact-box">
+
+            <div class="contact-item">
+                📱
+                <a href="tel:0967014599">
+                    0967014599
+                </a>
+            </div>
+
+            <div class="contact-item">
+                📱
+                <a href="tel:0916815168">
+                    0916815168
+                </a>
+            </div>
+
+            <div class="contact-item">
+                📍 Gulele, Woreda 3
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 <span>Betelhem Getachew</span>.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
